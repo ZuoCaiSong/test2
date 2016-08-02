@@ -158,15 +158,93 @@ for index in 0..<arrConunt { //小于号后面不能用空格
 }
 
 //＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝ 字符串的比较＝＝＝＝＝＝＝＝＝
+//1.空字符串的创建
 let str1 = "zuocaison"
 let str2 = "zuocaisong"
+
+
+
+let 字符串的创建2  = String()
 
 if str1 != str2{
     print("不相等")
 }
 
-// =====
+
+var 空字符串: String = ""
+//2.判断是否是空字符串
+if 空字符串.isEmpty{
+    
+    print("是空字符串")
+    
+}
+
+//3. 单个字符
+var 单个字符2 : Character = "u"
+
+// 3.1 将字符串遍历成单个字符
+for char in str1.characters {
+
+    print(char)
+}
+
+//字符串的个数长度
+//countElements(str1)
+str1.characters.count
+
+//选并操作符
+let 理想品牌11 : String?
+
+
+
+let 底线品牌 = "小米4"
+
+理想品牌11 = "iphone7"
+
+var 实际入手  = (理想品牌11 ?? 底线品牌 )
+
+
+
+//========================数组的学习==============================
+//1，定义一个字符串的数组 ，记住数组是用方括号 ，元祖是圆括号
 var jiji = [String]()
+
+//重复定义100个一样的字符串在数组里面可以：
+var strInArr = [String](count: 100, repeatedValue: "100个一样的字符串")
+//1.1，定义一个字符的数组，var就是可变的
+var marray1 = [1,4] //注意数组里面的类型
+
+marray1.count
+
+//元素的追加
+marray1.append(2)
+marray1 += [7]
+
+//元素是否为空
+jiji.isEmpty
+
+marray1.isEmpty
+
+
+//元素插入
+marray1.insert(56, atIndex: 2)
+
+marray1.removeLast()//会反悔移除的元素
+
+// 元祖式；遍历
+
+for (index,elemnetArr) in EnumerateSequence(marray1){
+    
+    print("\(index):\(elemnetArr)")
+}
+
+//元素的更改，注意不要越界
+// 注意，[2...3],2和3两个元素会被重新赋值，如果右边的元素（值的个数）多个左边区间的个数，则会被追加到数组里面去，可以试试 marray1[2..<3] = [88,99,100,111]
+marray1[2...3] = [88,99]
+
+marray1
+
+
 
 
 

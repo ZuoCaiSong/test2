@@ -2,6 +2,7 @@
 <playground version='6.0' target-platform='ios'>
     <pages>
         <page name='Int8_Int16'/>
-        <page name='Untitled Page'/>
+        <page name='字典'/>
+        <page name='循环'/>
     </pages>
 </playground>
