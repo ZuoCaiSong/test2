@@ -4,6 +4,5 @@
         <page name='Int8_Int16'/>
         <page name='字典'/>
         <page name='循环'/>
-        <page name='switch'/>
     </pages>
 </playground>
